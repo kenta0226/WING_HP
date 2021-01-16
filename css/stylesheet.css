@@ -1,3 +1,5 @@
+@charset "utf8";
+
 body {
   /*余計な余白を作らないように*/
   margin: 0;
@@ -7,7 +9,6 @@ body {
     ↑ロゴ ↑ナビゲーション */
   min-width: 720px;
 }
-
 
 
 /*-- header --*/
@@ -220,14 +221,44 @@ nav ul li a:hover {
 
 
 /*-------------- 採用情報ページレイアウト ---------*/
+
+/*--breadcrumbは将来的にcommon.cssに移すべき--*/
+#breadcrumb {
+  width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#breadcrumb ul {
+	list-style-type: none;
+	padding: 0;
+}
+#breadcrumb ul li {
+	display: inline;
+	margin-right: 5px;
+}
+#breadcrumb li:after {
+  content: '>';
+  padding: 0 0.2em;
+  color: #555;
+}
+#breadcrumb li:last-child::after {
+  content: '';
+}
+
 body h1 {
   margin: 0 0 26px 0;
 	padding-top: 28px;
 	text-align: center;
 }
 
-.recurit-msg {
-  display: block;
-  margin: auto;
-	padding-top: 28px;
+.recruit-msg {
+  text-align: center;
 }
+
+.recruit_top_bunner {
+  margin: auto;
+}
+
+
+
+
