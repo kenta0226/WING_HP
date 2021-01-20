@@ -259,6 +259,12 @@ body h1 {
   margin: auto;
 }
 
+#sub {
+  position: absolute;
+  z-index: 99999;
+  top: 320px;
+  left: 40px
+}
 
 
 
